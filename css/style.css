@@ -4,18 +4,20 @@ body {
 }
 .grid {
   display: grid;
-  grid-gap: 1em;
+  grid-gap: 2em;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 .card {
+  background-color: #FFF;
   color: #333;
   text-decoration: none;
   padding: .5em;
-  transition: box-shadow .5s ease;
+  transition: all .5s ease;
   box-shadow: 1px 1px 4px rgba(0,0,0,0.3),
               -1px 0px 4px rgba(0,0,0,0.3);
 }
 .card:hover {
+  transform: scale(1.05);
   box-shadow: 3px 3px 24px rgba(0,0,0,0.3),
               -3px 0px 24px rgba(0,0,0,0.3);
 }
